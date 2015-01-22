@@ -157,7 +157,7 @@ XKit.extensions.shuffle_queue = new Object({
 
 		GM_xmlhttpRequest({
 			method: "GET",
-			url: "http://www.tumblr.com/blog/" + m_url + "/queue?page=" + XKit.extensions.shuffle_queue.delete_page + "&xfetchid=" + XKit.tools.random_string() + XKit.tools.random_string(),
+			url: "//www.tumblr.com/blog/" + m_url + "/queue?page=" + XKit.extensions.shuffle_queue.delete_page + "&xfetchid=" + XKit.tools.random_string() + XKit.tools.random_string(),
 			json: false,
 			headers: {
 				"X-Requested-With": "XMLHttpRequest"
@@ -247,7 +247,7 @@ XKit.extensions.shuffle_queue = new Object({
 
 		GM_xmlhttpRequest({
 			method: "POST",
-			url: "http://www.tumblr.com/svc/post/delete",
+			url: "//www.tumblr.com/svc/post/delete",
 			json: true,
 			data: JSON.stringify(m_object),
 			headers: {
@@ -332,7 +332,7 @@ XKit.extensions.shuffle_queue = new Object({
 
 			GM_xmlhttpRequest({
 				method: "POST",
-				url: "http://www.tumblr.com/blog/" + m_url + "/order_post_queue/",
+				url: "//www.tumblr.com/blog/" + m_url + "/order_post_queue/",
 				data: "post_ids=" + to_send + "&form_key=" + form_key,
 				json: false,
 				onerror: function(response) {
@@ -369,7 +369,7 @@ XKit.extensions.shuffle_queue = new Object({
 
 			GM_xmlhttpRequest({
 				method: "POST",
-				url: "http://www.tumblr.com/blog/" + m_url + "/order_post_queue/",
+				url: "//www.tumblr.com/blog/" + m_url + "/order_post_queue/",
 				data: "post_ids=" + to_send + "&form_key=" + form_key,
 				json: false,
 				onerror: function(response) {
